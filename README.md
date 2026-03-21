@@ -1,2 +1,2 @@
 # Praticando HTML E CSS
-## Projeto: Receita
+## Link do Projeto: https://leo-oliveira-sales.github.io/Praticando-htms-css-ProjetoReceita/
