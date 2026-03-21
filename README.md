@@ -1,2 +1,2 @@
-# Treinando HTML E CSS
+# Praticando HTML E CSS
 ## Projeto: Receita
