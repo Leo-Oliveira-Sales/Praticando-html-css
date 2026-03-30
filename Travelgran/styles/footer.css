@@ -1,0 +1,15 @@
+
+
+footer {
+ display: flex; /*Elementos Lado a Lado*/
+ gap: 24px;
+ padding-block: 24px; /*espaçamento interno vertical*/
+
+ font: 14px/150% var(--font-family);
+}
+
+footer span:first-child { /*primeiro filho do footer*/
+ /*margin-right: auto;*/
+ margin-right: auto;
+ 
+}

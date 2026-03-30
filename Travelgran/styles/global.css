@@ -1,0 +1,71 @@
+/* Configurações gerais */
+
+
+/* Sempre iniciamos o projeto com 
+ margin: 0; 
+ padding: 0; 
+ box-sizing: border-box;
+*/
+
+* {
+ margin: 0; /*margem externa dos elementos*/
+ padding: 0; /*padding é o espaço entre o conteúdo e a borda*/
+ box-sizing: border-box; /*ajuste interno dos elementos*/
+}
+
+:root{
+ /*Variaveis*/
+ /*Criando uma variavel de cor*/
+ --brand-color: #EF5F4C; 
+ --background-color: #FFFFFF;
+ --surface-color: #F5F5F5;
+ --skeleton-color: #D9D9D9;
+ --shape-transparency: rgba(255, 255, 255, 0.560);
+ --text-color-primary: #313131;
+ --text-color-secondary: #6C6C6C;
+
+ /*Variaveis de fonte:*/
+ --font-family: "Roboto", sans-serif;
+
+ --text-lg: bold 32px/125% var(--font-family);
+ --text: 16px/150% var(--font-family);
+ --text-md: 14px/170% var(--font-family);
+ --text-sm: 12px/170% var(--font-family);
+}
+
+body{ /*Definido a fonte a cor e a cor de fundo bg*/
+ font: var(--text);
+ color: var(--text-color-secondary);
+ background-color: var(--background-color);
+}
+
+
+a {
+ text-decoration: none; /*tira o sublinhado */
+ color: var(--text-color-secondary);
+}
+
+a:hover { /*Ele aplica um estilo quando o mouse passa por cima do elemento.*/
+ color: var(--brand-color); /*Vai mudara cor para var(--brand-color)*/
+ text-decoration: underline; /*Vai aparecer um sublinhado ao passar o mouse*/
+}
+
+.container {
+ padding-inline: 32px; /* Espaço em toda a lateral do projeto/nav */
+ max-width: 1280px; /*largura maxima do projeto/nav*/
+ margin-inline: auto; /*quando aumentar ou diminuir ele vai continuar alinhado ao meio*/
+}
+
+/*cor de fundo (bg) para toda a tag div*/
+.bg-suface-color {
+ background-color: var(--surface-color);
+}
+
+/* Melhoria para responsividade
+Evita problemas em telas pequenas
+.container {
+ width: 100%;
+ max-width: 1280px;
+ margin-inline: auto;
+ padding-inline: 32px;
+}*/
