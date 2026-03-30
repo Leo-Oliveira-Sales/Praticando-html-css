@@ -1,0 +1,61 @@
+main {
+ display: flex; /*Os elementos ficam lado a lado detro da caixa*/
+ flex-wrap: wrap; /*controlar a quebra dos elementos para a próxima linha ou não.*/
+ gap: 24px; /*espaçamento entre elementos*/
+ padding-block: 24px; /*espaçamento interno na direção vertical*/
+ 
+}
+
+/* Melhoria para responsividade. Quando a tela diminui, as imagens ficam desalinhadas à esquerda.
+main {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 24px;
+ padding-block: 24px;
+ justify-content: center;
+}*/
+
+main img {
+ width: 286px; /*largura*/
+ height: 286px; /*autura*/
+ object-fit: cover; /*vai preencher todo o espaço do container, mantendo a proporção*/
+}
+
+/*Melhoria para Resposividaade::
+main img {
+ width: 100%;
+ max-width: 286px;
+ aspect-ratio: 1/1;
+ object-fit: cover;
+}*/
+
+
+/* OBS: O projeto ficaria muito melhor usando CSS Grid no main.
+Isso resolve 100% da responsividade da galeria automaticamente.
+main{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 24px;
+ padding-block: 24px;
+}
+
+main img{
+ width: 100%;
+ aspect-ratio: 1/1;
+ object-fit: cover;
+}*/
+
+
+/* Efeito nas imagens: quando o mouse passa a imagem aumenta levemente
+
+main img {
+ width: 100%;
+ aspect-ratio: 1/1;
+ object-fit: cover;
+ transition: transform .3s ease;
+ cursor: pointer;
+}
+
+main img:hover {
+ transform: scale(1.05);
+}*/
